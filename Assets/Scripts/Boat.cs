@@ -16,13 +16,11 @@ public class Boat : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.A))
         {
-            Debug.Log("left");
             torque += Vector3.up * rowForce;
         }
 
         if (Input.GetKeyDown(KeyCode.D))
         {
-            Debug.Log("right");
             torque += -Vector3.up * rowForce;
         }
         
