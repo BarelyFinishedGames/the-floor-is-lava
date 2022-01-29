@@ -1,8 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.UI;
 using UnityEngine;
 
 public class UpdateLightRange : MonoBehaviour
@@ -17,6 +12,6 @@ public class UpdateLightRange : MonoBehaviour
 
     void Update()
     {
-        _light.range = Vector3.Distance(transform.position, target.position) + 10;
+        _light.range = Vector3.Distance(transform.position, target.position) *2;
     }
 }
