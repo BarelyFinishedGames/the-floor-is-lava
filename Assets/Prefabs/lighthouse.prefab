@@ -1171,6 +1171,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5613893982871222490}
+  - component: {fileID: 2177205907730694485}
   m_Layer: 0
   m_Name: lighthouse
   m_TagString: Untagged
@@ -1196,6 +1197,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &2177205907730694485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5090015881754157664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc56bbeb4a866974fb71e03beaa58840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5359907701356725818
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,7 +1456,7 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0.9227677, b: 0.3254717, a: 1}
+  m_Color: {r: 1, g: 0.9917727, b: 0.9292453, a: 1}
   m_Intensity: 15.01
   m_Range: 10
   m_SpotAngle: 19.4
@@ -1659,7 +1672,7 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.9150943, g: 0.79699236, b: 0.35826805, a: 1}
+  m_Color: {r: 0.9433962, g: 0.9067309, b: 0.7698469, a: 1}
   m_Intensity: 0.43
   m_Range: 10
   m_SpotAngle: 87.9
