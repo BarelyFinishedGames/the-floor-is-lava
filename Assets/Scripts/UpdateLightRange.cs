@@ -17,6 +17,6 @@ public class UpdateLightRange : MonoBehaviour
 
     void Update()
     {
-        _light.range = Vector3.Distance(transform.position, target.position) + 10;
+        _light.range = Vector3.Distance(transform.position, target.position) *2;
     }
 }
