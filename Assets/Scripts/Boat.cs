@@ -4,6 +4,8 @@ using UnityEngine;
 public class Boat : MonoBehaviour
 {
     private Rigidbody rigidbody;
+
+    public float rowForce = 50.0f;
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
@@ -11,7 +13,6 @@ public class Boat : MonoBehaviour
     
     void Update()
     {
-        float rowForce = 50.0f;
         Vector3 torque = Vector3.zero;
         Vector3 movement = Vector3.zero;
 
