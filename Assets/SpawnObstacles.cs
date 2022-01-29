@@ -13,8 +13,8 @@ public class SpawnObstacles : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        planeX = plane.GetComponent<Collider>().bounds.size.x/2;
-        planeZ = plane.GetComponent<Collider>().bounds.size.z/2;
+        planeX = plane.GetComponent<Collider>().bounds.size.x;
+        planeZ = plane.GetComponent<Collider>().bounds.size.z;
         for (int i = 0; i < 20; i++)
         {
             SpawnObstaclesMethod(radius);
@@ -27,7 +27,7 @@ public class SpawnObstacles : MonoBehaviour
         
     }
 
-    private void SpawnObstaclesMethod(float radius, int numSamplesBeforeRejection = 30)
+    private void SpawnObstaclesMethod(float radius, int numSamplesBeforeRejection = 80)
     {
         float cellSize = radius / Mathf.Sqrt(2);
         int[,] grid = new int[Mathf.CeilToInt(planeX/cellSize), Mathf.CeilToInt(planeZ/cellSize)];
@@ -66,7 +66,7 @@ public class SpawnObstacles : MonoBehaviour
             foreach (var point in points)
             {
                 GameObject obj = Instantiate(this.obstacle);
-                obj.transform.position = new Vector3(point.x, 0, point.y);
+                obj.transform.position = new Vector3(point.x - (planeX/2), 0, point.y - (planeZ/2));
                 obj.transform.localScale = new Vector3(1, 1, 1);
             }
         }
