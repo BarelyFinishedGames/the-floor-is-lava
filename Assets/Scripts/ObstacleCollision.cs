@@ -7,6 +7,7 @@ public class ObstacleCollision : MonoBehaviour
         if (collision.gameObject.CompareTag("Boat"))
         {
             Debug.Log(collision.gameObject);
+            GameManager.Instance.GameOver();
         }
     }
 }
