@@ -18,6 +18,7 @@ public class GameManager
     }
 
     public readonly UnityEvent OnGameOver = new();
+    public readonly UnityEvent OnGameWon = new();
     private GameManager()
     {
         
@@ -26,5 +27,10 @@ public class GameManager
     public void GameOver()
     {
         OnGameOver.Invoke();
+    }
+
+    public void GameWon()
+    {
+        OnGameWon.Invoke();
     }
 }
