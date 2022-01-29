@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class SpawnObstacles : MonoBehaviour
 {
@@ -21,12 +23,6 @@ public class SpawnObstacles : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void SpawnObstaclesMethod(float radius, int numSamplesBeforeRejection = 80)
     {
         float cellSize = radius / Mathf.Sqrt(2);
@@ -35,6 +31,7 @@ public class SpawnObstacles : MonoBehaviour
         List<Vector2> spawnPoints = new List<Vector2>();
 
         spawnPoints.Add(new Vector2(Random.Range(-planeX, planeX),Random.Range(-planeZ, planeZ)));
+        // spawnPoints.Add(new Vector2(0, 0));
         while (spawnPoints.Count>0)
         {
             int spawnIndex = Random.Range(0, spawnPoints.Count);
@@ -44,7 +41,7 @@ public class SpawnObstacles : MonoBehaviour
             {
                 float angle = Random.value * Mathf.PI * 2;
                 Vector2 dir = new Vector2(Mathf.Sin(angle), Mathf.Cos(angle));
-                Vector2 candidate = spawnCentre * dir * Random.Range(radius, 2 * radius);
+                Vector2 candidate = spawnCentre + dir * Random.Range(radius, 2 * radius);
                 if (IsValid(candidate, cellSize, radius, points, grid))
                 {
                     points.Add(candidate);
@@ -66,7 +63,7 @@ public class SpawnObstacles : MonoBehaviour
             foreach (var point in points)
             {
                 GameObject obj = Instantiate(this.obstacle);
-                obj.transform.position = new Vector3(point.x - (planeX/2), 0, point.y - (planeZ/2));
+                obj.transform.position = new Vector3(point.x - (planeX/2), 0.4f, point.y - (planeZ/2));
                 obj.transform.localScale = new Vector3(1, 1, 1);
             }
         }
