@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.08307382, g: 0.082648836, b: 0.08444298, a: 1}
+  m_IndirectSpecularColor: {r: 0.08930782, g: 0.08653372, b: 0.07180824, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacle: {fileID: 4744644807165203057, guid: ddbe2680e9e2ab54d90ddcd042c908b6, type: 3}
   plane: {fileID: 520993188}
-  radius: 80
+  radius: 200
 --- !u!4 &315866957
 Transform:
   m_ObjectHideFlags: 0
@@ -283,7 +283,15 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1521269490}
+    - target: {fileID: 5359907702453236860, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1521269490}
     - target: {fileID: 5359907702938872786, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1521269490}
+    - target: {fileID: 5359907703214863293, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1521269490}
