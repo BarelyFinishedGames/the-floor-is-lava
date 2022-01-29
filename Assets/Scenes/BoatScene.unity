@@ -1106,10 +1106,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3641337796315389960, guid: 38435db21c6243447b5b8612464944b4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3641337796783027256, guid: 38435db21c6243447b5b8612464944b4, type: 3}
       propertyPath: m_Name
       value: BoatAndCamera
@@ -1157,30 +1153,6 @@ PrefabInstance:
     - target: {fileID: 3641337796783027259, guid: 38435db21c6243447b5b8612464944b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5986547737483824983, guid: 38435db21c6243447b5b8612464944b4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6596968516790348484, guid: 38435db21c6243447b5b8612464944b4, type: 3}
-      propertyPath: m_RenderMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6596968516790348484, guid: 38435db21c6243447b5b8612464944b4, type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6596968516790348484, guid: 38435db21c6243447b5b8612464944b4, type: 3}
-      propertyPath: m_PlaneDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6596968516790348484, guid: 38435db21c6243447b5b8612464944b4, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8533495552179156119, guid: 38435db21c6243447b5b8612464944b4, type: 3}
-      propertyPath: ShapeModule.m_Scale.x
-      value: 1.44
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38435db21c6243447b5b8612464944b4, type: 3}
