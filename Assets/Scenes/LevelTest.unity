@@ -278,11 +278,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3641337796783027259, guid: 38435db21c6243447b5b8612464944b4, type: 3}
   m_PrefabInstance: {fileID: 1721625151}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &643462065 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5320349362716924625, guid: 99b1c6f5e655b1c4a97f8233ae8c9961, type: 3}
-  m_PrefabInstance: {fileID: 1936635317}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1052459947
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,8 +385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caa2927591adb574399ae00cd8e8efd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strongSpotlight: {fileID: 643462065}
-  weakSpotligh: {fileID: 302376719}
+  spotlight: {fileID: 302376719}
   angle: 30
 --- !u!1001 &1721625151
 PrefabInstance:

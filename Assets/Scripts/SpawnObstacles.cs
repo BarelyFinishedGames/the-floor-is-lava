@@ -63,7 +63,7 @@ public class SpawnObstacles : MonoBehaviour
             foreach (var point in points)
             {
                 GameObject obj = Instantiate(this.obstacle);
-                obj.transform.position = new Vector3(point.x - (planeX/2), 0, point.y - (planeZ/2));
+                obj.transform.position = new Vector3(point.x - (planeX/2), 0.4f, point.y - (planeZ/2));
                 obj.transform.localScale = new Vector3(1, 1, 1);
             }
         }
