@@ -39,7 +39,6 @@ public class Boat : MonoBehaviour
             rigidbody.velocity = rigidbody.velocity.normalized * maxSpeed;
         }
 
-        float currentRotation = transform.localRotation.y;
         Vector3 pushback = Vector3.zero;
         Vector3 movement2 = Vector3.zero;
 
