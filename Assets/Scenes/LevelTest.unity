@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.0754717, g: 0.0754717, b: 0.0754717, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 6ec91d61405851941acb7a90de1b0846, type: 2}
   m_HaloStrength: 0.5
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.106106736, g: 0.1076966, b: 0.111268036, a: 1}
+  m_IndirectSpecularColor: {r: 0.08307382, g: 0.082648836, b: 0.08444298, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -784,7 +784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3641337796783027259, guid: 38435db21c6243447b5b8612464944b4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 283
+      value: -946.4
       objectReference: {fileID: 0}
     - target: {fileID: 3641337796783027259, guid: 38435db21c6243447b5b8612464944b4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1004,6 +1004,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: lighthouse
       objectReference: {fileID: 0}
+    - target: {fileID: 5359907701696032160, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
+      propertyPath: m_Intensity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5359907701696032188, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
       propertyPath: target
       value: 
@@ -1036,6 +1040,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 597560502}
+    - target: {fileID: 5359907703214863294, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
+      propertyPath: m_Intensity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5613893982871222490, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
       propertyPath: m_RootOrder
       value: 10
