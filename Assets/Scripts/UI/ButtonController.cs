@@ -9,7 +9,7 @@ namespace UI
     {
         private void Start()
         {
-            gameObject.GetComponentInChildren<Button>().onClick.AddListener(PlayClickSound);
+            gameObject.GetComponent<Button>().onClick.AddListener(PlayClickSound);
         }
 
         public void PlayGame()
@@ -22,12 +22,9 @@ namespace UI
         {
             Application.Quit();
         }
-        
-        
-        
+
         private void PlayClickSound()
         {
-            Debug.Log("play sound");
             AudioManager.StartSound("buttonSound");
         }
     }
