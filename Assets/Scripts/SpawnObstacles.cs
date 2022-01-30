@@ -62,9 +62,9 @@ public class SpawnObstacles : MonoBehaviour
         {
             foreach (var point in points)
             {
-                int decider = Random.Range(0, 2);
+                int decider = Random.Range(0, 3);
                 GameObject obj = Instantiate(this.obstacles[decider]);
-                obj.transform.position = new Vector3(point.x - (planeX/2), 0.8f, point.y - (planeZ/2));
+                obj.transform.position = new Vector3(point.x - (planeX/2), obj.transform.position.y, point.y - (planeZ/2));
                 obj.transform.localScale = new Vector3(1, 1, 1);
             }
         }
