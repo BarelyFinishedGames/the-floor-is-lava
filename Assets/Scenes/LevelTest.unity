@@ -241,6 +241,14 @@ PrefabInstance:
       propertyPath: preventPauseScreenObjects.Array.data[1]
       value: 
       objectReference: {fileID: 1917723223}
+    - target: {fileID: 1456854238716431913, guid: 2931e2db3835fc24cabbf8bee76d56f0, type: 3}
+      propertyPath: volumesToChange.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456854238716431913, guid: 2931e2db3835fc24cabbf8bee76d56f0, type: 3}
+      propertyPath: volumesToChange.Array.data[2]
+      value: gameOverSound
+      objectReference: {fileID: 0}
     - target: {fileID: 1456854238717415642, guid: 2931e2db3835fc24cabbf8bee76d56f0, type: 3}
       propertyPath: m_IsActive
       value: 0
