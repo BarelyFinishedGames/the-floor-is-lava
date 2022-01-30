@@ -49,9 +49,7 @@ public class Boat : MonoBehaviour
         {
             rigidbody.velocity = rigidbody.velocity.normalized * maxSpeed;
         }
-
-        Debug.Log(rigidbody.velocity.z);
-
+        
         Vector3 pushback = Vector3.zero;
         Vector3 movement2 = Vector3.zero;
 

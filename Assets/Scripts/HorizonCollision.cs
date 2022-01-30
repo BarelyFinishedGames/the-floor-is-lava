@@ -21,7 +21,6 @@ public class HorizonCollision : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Boat"))
         {
-            Debug.Log(collision.gameObject);
             GameManager.Instance.GameWon();
         }
 

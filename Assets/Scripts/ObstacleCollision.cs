@@ -6,7 +6,6 @@ public class ObstacleCollision : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Boat"))
         {
-            Debug.Log(collision.gameObject);
             AudioManager.StartSound("stoneSound");
             GameManager.Instance.GameOver();
         }
