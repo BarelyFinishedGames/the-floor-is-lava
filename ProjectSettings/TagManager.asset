@@ -10,6 +10,9 @@ TagManager:
   - rainSound
   - gameOverSound
   - buttonSound
+  - paddleLeftSound
+  - paddleRightSound
+  - stoneSound
   layers:
   - Default
   - TransparentFX
