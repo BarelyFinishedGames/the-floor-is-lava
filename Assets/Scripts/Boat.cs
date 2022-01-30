@@ -36,6 +36,26 @@ public class Boat : MonoBehaviour
             rigidbody.velocity = rigidbody.velocity.normalized * maxSpeed;
         }
 
+        float currentRotation = transform.localRotation.y;
+        Vector3 pushback = Vector3.zero;
+        Vector3 movement2 = Vector3.zero;
+
+        if (currentRotation > 45f)
+        {
+            pushback += Vector3.down * rowForce;
+            movement2 += -transform.right * rowForce;
+            rigidbody.AddTorque(pushback);
+            rigidbody.AddForce(movement2);
+        }
+
+        if (currentRotation < -45f)
+        {
+            pushback += Vector3.up * rowForce;
+            movement2 += transform.right * rowForce;
+            rigidbody.AddTorque(pushback);
+            rigidbody.AddForce(movement2);
+        }
+
         Vector3 torque = Vector3.zero;
         Vector3 movement = Vector3.zero;
 
