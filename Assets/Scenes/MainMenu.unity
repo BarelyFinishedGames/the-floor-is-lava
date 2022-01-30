@@ -2284,6 +2284,7 @@ MonoBehaviour:
   volumesToChange:
   - introSound
   - backgroundSound
+  - gameOverSound
 --- !u!114 &1872501258
 MonoBehaviour:
   m_ObjectHideFlags: 0
