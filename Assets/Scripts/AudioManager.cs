@@ -53,6 +53,15 @@ public class AudioManager : MonoBehaviour
 
         return component != null ? component.volume : 0.0f;
     }
+    
+    public static AudioSource GetAudioSourceByTag(string tag)
+    {
+        var obj = GameObject.FindWithTag(tag);
+
+        if (obj is null) return null;
+        
+        return obj.GetComponent<AudioSource>();
+    }
 
     public void ChangeVolume(string tag, float volume)
     {
