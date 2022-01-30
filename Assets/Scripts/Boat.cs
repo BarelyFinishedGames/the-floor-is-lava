@@ -16,9 +16,6 @@ public class Boat : MonoBehaviour
     public Animator paddleLeftAnim;
     public Animator paddleRightAnim;
 
-    public AudioSource paddleLeftAudio;
-    public AudioSource paddleRightAudio;
-
     public float maxRowAnimSpeed = 3.0f;
 
     private float lastRowRight;
@@ -88,10 +85,14 @@ public class Boat : MonoBehaviour
             float speed = 1 + 1 / delta;
             paddleLeftAnim.speed = Mathf.Clamp(speed, 1, maxRowAnimSpeed);
             paddleLeftAnim.SetTrigger(RowLeftAnim);
-            if (paddleLeftAudio.isPlaying == false)
+            
+            var audioSource = AudioManager.GetAudioSourceByTag("paddleLeftSound");
+
+            if (audioSource != null && !audioSource.isPlaying)
             {
-                paddleLeftAudio.Play();
+                audioSource.Play();
             }
+            
             lastRowRight = now;
         }
 
@@ -105,10 +106,14 @@ public class Boat : MonoBehaviour
             float speed = 1 + 1 / delta;
             paddleRightAnim.speed = Mathf.Clamp(speed, 1, maxRowAnimSpeed);
             paddleRightAnim.SetTrigger(RowRightAnim);
-            if (paddleRightAudio.isPlaying == false)
+
+            var audioSource = AudioManager.GetAudioSourceByTag("paddleRightSound");
+
+            if (audioSource != null && !audioSource.isPlaying)
             {
-                paddleRightAudio.Play();
+                audioSource.Play();
             }
+            
             lastRowRight = now;
         }
 

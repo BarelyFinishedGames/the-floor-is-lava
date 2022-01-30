@@ -13,6 +13,7 @@ TagManager:
   - paddleLeftSound
   - paddleRightSound
   - stoneSound
+  - paddleSound
   layers:
   - Default
   - TransparentFX

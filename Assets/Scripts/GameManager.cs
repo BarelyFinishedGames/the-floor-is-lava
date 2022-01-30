@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -35,6 +36,18 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(nextScene);
     }
 
+    private void Start()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            AudioManager.StartSound("introSound");
+        }
+        else
+        {
+            AudioManager.StartSound("backgroundSound");
+        }
+    }
+
     public void GameOver()
     {
         OnGameOver.Invoke();
@@ -67,6 +80,17 @@ public class GameManager : MonoBehaviour
 
     public void GoToMainMenu()
     {
+        AudioManager.StopSound("backgroundSound");
+        AudioManager.StartSound("introSound");
+        
         SceneManager.LoadScene(1);
+    }
+    
+    public void StartGame()
+    {
+        AudioManager.StopSound("introSound");
+        AudioManager.StartSound("backgroundSound");
+        
+        SceneManager.LoadScene(2);
     }
 }
