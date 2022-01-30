@@ -11,7 +11,7 @@ public class AudioController : MonoBehaviour
             
         AudioManager.Instance.onVolumeChanged.AddListener(OnVolumeChanged);
 
-        audioSource.volume = AudioManager.Instance.GetVolumeByTag(tag);
+        audioSource.volume = AudioManager.GetVolumeByTag(tag);
     }
 
     private void OnVolumeChanged(string toChange, float volume)

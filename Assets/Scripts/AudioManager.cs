@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -42,9 +43,12 @@ public class AudioManager : MonoBehaviour
     }
     */
     
-    public float GetVolumeByTag(string tag)
+    public static float GetVolumeByTag(string tag)
     {
         var obj = GameObject.FindWithTag(tag);
+
+        if (obj is null) return 0.0f;
+        
         var component = obj.GetComponent<AudioSource>();
 
         return component != null ? component.volume : 0.0f;
@@ -54,6 +58,30 @@ public class AudioManager : MonoBehaviour
     {
         onVolumeChanged.Invoke(tag, volume);
     }
+
+    public static void StopSound(string tag)
+    {
+        var obj = GameObject.FindWithTag(tag);
+        
+        if (obj is null) return;
+        
+        obj.SetActive(false);
+    }
+    
+    public static void StartSound(string tag)
+    {
+        var obj = GameObject.FindWithTag(tag);
+
+        if (obj is null) return;
+        
+        obj.SetActive(true);
+    }
+
+    private void OnGameOver()
+    {
+        StopSound("backgroundSound");
+        StartSound("gameOverSound");
+    }
     
     private void Awake()
     {
@@ -61,5 +89,10 @@ public class AudioManager : MonoBehaviour
         {
             Instance = this;
         }
+    }
+
+    private void Start()
+    {
+        GameManager.Instance.OnGameOver.AddListener(OnGameOver);
     }
 }
