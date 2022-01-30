@@ -348,7 +348,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 476ab4a171b431d43b8013b22bf1fc39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 4744644807165203057, guid: ddbe2680e9e2ab54d90ddcd042c908b6, type: 3}
+  obstacles:
+  - {fileID: 4744644807165203057, guid: ddbe2680e9e2ab54d90ddcd042c908b6, type: 3}
+  - {fileID: 5774114040450869688, guid: a694216f43a3c8d448b034fb63891657, type: 3}
+  - {fileID: 7552852528608177107, guid: 810913ea87fd6b04ba7deeba76e5444d, type: 3}
   plane: {fileID: 520993188}
   radius: 200
 --- !u!4 &315866957
