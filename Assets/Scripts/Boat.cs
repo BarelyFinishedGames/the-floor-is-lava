@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -52,10 +53,12 @@ public class Boat : MonoBehaviour
             rigidbody.velocity = rigidbody.velocity.normalized * maxSpeed;
         }
 
+        Debug.Log(rigidbody.velocity.z);
+
         Vector3 pushback = Vector3.zero;
         Vector3 movement2 = Vector3.zero;
 
-        if (angle > 45f)
+        if (angle > 60f)
         {
             pushback += Vector3.down * rowForce;
             movement2 += -transform.right * rowForce;
@@ -63,7 +66,7 @@ public class Boat : MonoBehaviour
             rigidbody.AddForce(movement2);
         }
 
-        if (angle < -45f)
+        if (angle < -60f)
         {
             pushback += Vector3.up * rowForce;
             movement2 += transform.right * rowForce;
