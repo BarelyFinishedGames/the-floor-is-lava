@@ -41,7 +41,7 @@ public class Boat : MonoBehaviour
     {
         float angle = transform.localEulerAngles.y;
         angle = (angle > 180) ? angle - 360 : angle;
-        Debug.Log(angle);
+        
         if (handleInput == false)
         {
             return;
