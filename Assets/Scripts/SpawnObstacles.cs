@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 
 public class SpawnObstacles : MonoBehaviour
 {
-    public GameObject obstacle;
+    public List<GameObject> obstacles;
     public Transform plane;
     private float planeX;
     public float radius;
@@ -62,8 +62,9 @@ public class SpawnObstacles : MonoBehaviour
         {
             foreach (var point in points)
             {
-                GameObject obj = Instantiate(this.obstacle);
-                obj.transform.position = new Vector3(point.x - (planeX/2), 0.4f, point.y - (planeZ/2));
+                int decider = Random.Range(0, 3);
+                GameObject obj = Instantiate(this.obstacles[decider]);
+                obj.transform.position = new Vector3(point.x - (planeX/2), obj.transform.position.y, point.y - (planeZ/2));
                 obj.transform.localScale = new Vector3(1, 1, 1);
             }
         }
