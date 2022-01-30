@@ -26,6 +26,9 @@ public class Boat : MonoBehaviour
 
     void Update()
     {
+        float angle = transform.localEulerAngles.y;
+        angle = (angle > 180) ? angle - 360 : angle;
+        Debug.Log(angle);
         if (handleInput == false)
         {
             return;
@@ -40,7 +43,7 @@ public class Boat : MonoBehaviour
         Vector3 pushback = Vector3.zero;
         Vector3 movement2 = Vector3.zero;
 
-        if (currentRotation > 45f)
+        if (angle > 45f)
         {
             pushback += Vector3.down * rowForce;
             movement2 += -transform.right * rowForce;
@@ -48,7 +51,7 @@ public class Boat : MonoBehaviour
             rigidbody.AddForce(movement2);
         }
 
-        if (currentRotation < -45f)
+        if (angle < -45f)
         {
             pushback += Vector3.up * rowForce;
             movement2 += transform.right * rowForce;
