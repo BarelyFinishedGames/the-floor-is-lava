@@ -16,6 +16,7 @@ public class GameWonMenu : MonoBehaviour
     {
         if (canvas.enabled && Input.GetKey(KeyCode.Space))
         {
+            canvas.enabled = false;
             GameManager.Instance.GoToMainMenu();
         }
     }
