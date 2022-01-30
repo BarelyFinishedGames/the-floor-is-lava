@@ -55,18 +55,18 @@ public class Boat : MonoBehaviour
         Vector3 pushback = Vector3.zero;
         Vector3 movement2 = Vector3.zero;
 
-        if (angle > 45f)
+        if (angle > 60f)
         {
-            pushback += Vector3.down * rowForce;
-            movement2 += -transform.right * rowForce;
+            pushback += Vector3.down * rowForce/2;
+            movement2 += -transform.right * rowForce/2;
             rigidbody.AddTorque(pushback);
             rigidbody.AddForce(movement2);
         }
 
-        if (angle < -45f)
+        if (angle < -60f)
         {
-            pushback += Vector3.up * rowForce;
-            movement2 += transform.right * rowForce;
+            pushback += Vector3.up * rowForce/2;
+            movement2 += transform.right * rowForce/2;
             rigidbody.AddTorque(pushback);
             rigidbody.AddForce(movement2);
         }
