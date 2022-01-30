@@ -62,10 +62,12 @@ public class AudioManager : MonoBehaviour
     public static void StopSound(string tag)
     {
         var obj = GameObject.FindWithTag(tag);
-        
+
         if (obj is null) return;
+
+        var component = obj.GetComponent<AudioSource>();
         
-        obj.SetActive(false);
+        component.Stop();
     }
     
     public static void StartSound(string tag)
@@ -73,8 +75,10 @@ public class AudioManager : MonoBehaviour
         var obj = GameObject.FindWithTag(tag);
 
         if (obj is null) return;
+
+        var component = obj.GetComponent<AudioSource>();
         
-        obj.SetActive(true);
+        component.Play();
     }
 
     private void OnGameOver()
