@@ -15,7 +15,7 @@ namespace UI
         
         void Update()
         {
-            if (canvas.enabled && Input.GetKey(KeyCode.Return))
+            if (canvas.enabled && Input.GetKey(KeyCode.Space))
             {
                 GameManager.Instance.GoToMainMenu();
             }
