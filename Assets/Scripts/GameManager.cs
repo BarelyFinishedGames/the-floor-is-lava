@@ -10,6 +10,19 @@ public class GameManager : MonoBehaviour
     public readonly UnityEvent OnGameOver = new();
     public readonly UnityEvent OnGameWon = new();
     
+    public readonly UnityEvent<bool> OnPauseToggled = new();
+
+    private bool _paused;
+    public bool Paused
+    {
+        private set
+        {
+            _paused = value;
+            OnPauseToggled.Invoke(_paused);
+        }
+        get => _paused;
+    }
+    
     private void Awake()
     {
         if (!Instance)
@@ -36,5 +49,19 @@ public class GameManager : MonoBehaviour
     {
         nextScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(0);
+    }
+
+    public void TogglePause()
+    {
+        Paused = !Paused;
+
+        if (Paused)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
     }
 }

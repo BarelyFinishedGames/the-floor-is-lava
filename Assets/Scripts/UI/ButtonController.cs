@@ -23,6 +23,11 @@ namespace UI
             Application.Quit();
         }
 
+        public void ResumeGame()
+        {
+            GameManager.Instance.TogglePause();
+        }
+
         private void PlayClickSound()
         {
             AudioManager.StartSound("buttonSound");
