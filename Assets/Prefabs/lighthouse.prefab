@@ -1295,10 +1295,10 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.9150943, g: 0.79699236, b: 0.35826805, a: 1}
-  m_Intensity: 0.43
+  m_Color: {r: 0.9339623, g: 0.906971, b: 0.8062033, a: 1}
+  m_Intensity: 1
   m_Range: 10
-  m_SpotAngle: 87.9
+  m_SpotAngle: 130.7
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
@@ -1456,10 +1456,10 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0.9917727, b: 0.9292453, a: 1}
+  m_Color: {r: 1, g: 0.9972576, b: 0.9764151, a: 1}
   m_Intensity: 15.01
   m_Range: 10
-  m_SpotAngle: 19.4
+  m_SpotAngle: 76.1
   m_InnerSpotAngle: 19.05
   m_CookieSize: 10
   m_Shadows:
@@ -1585,7 +1585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1d71df0c5ba5284eac7b7f56d44bce4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 50
+  rotationSpeed: 40
   xAxis: 0
   yAxis: 1
   zAxis: 0
@@ -1672,10 +1672,10 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.9433962, g: 0.9067309, b: 0.7698469, a: 1}
-  m_Intensity: 0.43
+  m_Color: {r: 0.9433962, g: 0.9236533, b: 0.84994656, a: 1}
+  m_Intensity: 1
   m_Range: 10
-  m_SpotAngle: 87.9
+  m_SpotAngle: 130.1
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
@@ -1890,10 +1890,10 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0.9227677, b: 0.3254717, a: 1}
+  m_Color: {r: 0.9622642, g: 0.9564585, b: 0.9123354, a: 1}
   m_Intensity: 15.01
   m_Range: 10
-  m_SpotAngle: 19.4
+  m_SpotAngle: 71
   m_InnerSpotAngle: 19.05
   m_CookieSize: 10
   m_Shadows:
