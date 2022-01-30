@@ -9,6 +9,7 @@ TagManager:
   - backgroundSound
   - rainSound
   - gameOverSound
+  - buttonSound
   layers:
   - Default
   - TransparentFX
