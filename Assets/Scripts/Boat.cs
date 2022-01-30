@@ -73,11 +73,6 @@ public class Boat : MonoBehaviour
             rigidbody.AddTorque(pushback);
             rigidbody.AddForce(movement2);
         }
-        
-        if (rigidbody.velocity.z > 4)
-        {
-            rigidbody.velocity = Vector3.zero;
-        }
 
         Vector3 torque = Vector3.zero;
         Vector3 movement = Vector3.zero;
