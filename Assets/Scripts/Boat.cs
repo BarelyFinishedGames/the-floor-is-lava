@@ -39,6 +39,9 @@ public class Boat : MonoBehaviour
 
     void Update()
     {
+        float angle = transform.localEulerAngles.y;
+        angle = (angle > 180) ? angle - 360 : angle;
+        
         if (handleInput == false)
         {
             return;
@@ -47,6 +50,25 @@ public class Boat : MonoBehaviour
         if (rigidbody.velocity.magnitude > maxSpeed)
         {
             rigidbody.velocity = rigidbody.velocity.normalized * maxSpeed;
+        }
+
+        Vector3 pushback = Vector3.zero;
+        Vector3 movement2 = Vector3.zero;
+
+        if (angle > 45f)
+        {
+            pushback += Vector3.down * rowForce;
+            movement2 += -transform.right * rowForce;
+            rigidbody.AddTorque(pushback);
+            rigidbody.AddForce(movement2);
+        }
+
+        if (angle < -45f)
+        {
+            pushback += Vector3.up * rowForce;
+            movement2 += transform.right * rowForce;
+            rigidbody.AddTorque(pushback);
+            rigidbody.AddForce(movement2);
         }
 
         Vector3 torque = Vector3.zero;
