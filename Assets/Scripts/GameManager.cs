@@ -64,4 +64,9 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1;
         }
     }
+
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene(1);
+    }
 }

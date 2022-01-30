@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 
 namespace UI
@@ -10,6 +11,14 @@ namespace UI
         {
             canvas = GetComponent<Canvas>();
             GameManager.Instance.OnGameOver.AddListener(GameOverHandler);
+        }
+        
+        void Update()
+        {
+            if (canvas.enabled && Input.GetKey(KeyCode.Return))
+            {
+                GameManager.Instance.GoToMainMenu();
+            }
         }
 
         private void GameOverHandler()
