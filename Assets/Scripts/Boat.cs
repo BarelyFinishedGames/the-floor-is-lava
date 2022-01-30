@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -41,7 +42,7 @@ public class Boat : MonoBehaviour
     {
         float angle = transform.localEulerAngles.y;
         angle = (angle > 180) ? angle - 360 : angle;
-        Debug.Log(angle);
+        
         if (handleInput == false)
         {
             return;
@@ -52,23 +53,30 @@ public class Boat : MonoBehaviour
             rigidbody.velocity = rigidbody.velocity.normalized * maxSpeed;
         }
 
+        Debug.Log(rigidbody.velocity.z);
+
         Vector3 pushback = Vector3.zero;
         Vector3 movement2 = Vector3.zero;
 
         if (angle > 60f)
         {
-            pushback += Vector3.down * rowForce/2;
-            movement2 += -transform.right * rowForce/2;
+            pushback += Vector3.down * rowForce;
+            movement2 += -transform.right * rowForce;
             rigidbody.AddTorque(pushback);
             rigidbody.AddForce(movement2);
         }
 
         if (angle < -60f)
         {
-            pushback += Vector3.up * rowForce/2;
-            movement2 += transform.right * rowForce/2;
+            pushback += Vector3.up * rowForce;
+            movement2 += transform.right * rowForce;
             rigidbody.AddTorque(pushback);
             rigidbody.AddForce(movement2);
+        }
+        
+        if (rigidbody.velocity.z > 4)
+        {
+            rigidbody.velocity = Vector3.zero;
         }
 
         Vector3 torque = Vector3.zero;
