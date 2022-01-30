@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731261, g: 0.3807449, b: 0.35872787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -294,26 +294,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: lighthouse
       objectReference: {fileID: 0}
-    - target: {fileID: 5359907701696032160, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
-      propertyPath: m_Color.b
-      value: 0.8062033
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359907701696032160, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
-      propertyPath: m_Color.g
-      value: 0.906971
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359907701696032160, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
-      propertyPath: m_Color.r
-      value: 0.9339623
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359907701696032160, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
-      propertyPath: m_Intensity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359907701696032160, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
-      propertyPath: m_SpotAngle
-      value: 130.7
-      objectReference: {fileID: 0}
     - target: {fileID: 5359907701696032188, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
       propertyPath: target
       value: 
@@ -326,22 +306,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 334045864}
-    - target: {fileID: 5359907702453236859, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
-      propertyPath: m_Color.b
-      value: 0.9764151
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359907702453236859, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
-      propertyPath: m_Color.g
-      value: 0.9972576
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359907702453236859, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359907702453236859, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
-      propertyPath: m_SpotAngle
-      value: 76.1
-      objectReference: {fileID: 0}
     - target: {fileID: 5359907702453236860, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
       propertyPath: target
       value: 
@@ -353,26 +317,6 @@ PrefabInstance:
     - target: {fileID: 5359907702610868524, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
       propertyPath: rotationSpeed
       value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359907702938872785, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
-      propertyPath: m_Color.b
-      value: 0.84994656
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359907702938872785, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
-      propertyPath: m_Color.g
-      value: 0.9236533
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359907702938872785, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
-      propertyPath: m_Color.r
-      value: 0.9433962
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359907702938872785, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
-      propertyPath: m_Intensity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359907702938872785, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
-      propertyPath: m_SpotAngle
-      value: 130.1
       objectReference: {fileID: 0}
     - target: {fileID: 5359907702938872786, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
       propertyPath: target
@@ -386,22 +330,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 334045864}
-    - target: {fileID: 5359907703214863294, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
-      propertyPath: m_Color.b
-      value: 0.9123354
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359907703214863294, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
-      propertyPath: m_Color.g
-      value: 0.9564585
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359907703214863294, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
-      propertyPath: m_Color.r
-      value: 0.9622642
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359907703214863294, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
-      propertyPath: m_SpotAngle
-      value: 71
-      objectReference: {fileID: 0}
     - target: {fileID: 5613893982871222490, guid: b4b48c495094bbc4d975864a30d289f2, type: 3}
       propertyPath: m_RootOrder
       value: 2

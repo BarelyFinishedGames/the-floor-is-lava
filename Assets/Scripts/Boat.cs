@@ -64,7 +64,7 @@ public class Boat : MonoBehaviour
             lastRowRight = now;
         }
 
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.L))
         {
             torque += -Vector3.up * rowForce;
             movement += transform.forward * rowForce;
