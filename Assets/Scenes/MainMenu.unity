@@ -861,6 +861,7 @@ MonoBehaviour:
   - rainSound
   - paddleLeftSound
   - paddleRightSound
+  - stoneSound
 --- !u!114 &940706294
 MonoBehaviour:
   m_ObjectHideFlags: 0
